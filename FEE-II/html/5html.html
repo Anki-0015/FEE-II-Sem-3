@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form>
+        <label for="fname">First name</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name: </label><br>
+        <input type="text" id="lname" name="lname">
+    </form>
+
+    <br><br>
+
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+
+      <br><br>
+    
+       <!--tells what action will perform when our form gets submitted-->
+    <form action="">
+
+        <!-- Input : -->
+        Enter Username :- <input type="text"><br>
+        Enter Password :- <input type="password"><br>
+        Enter Date :- <input type="date"><br>
+        Enter Time :- <input type="time"><br>
+        Enter Number :- <input type="number"><br>
+        Select Colour :- <input type="color"><br>
+        <hr>
+        <h1>Placeholder And Labels</h1>
+        <label for="Username">User Name:</label>
+        <input type="text" placeholder="User Name" id="Username"><br>
+        <label pass="Password"> Password :</label>
+        <input type="password" placeholder="Password" id="pass"><br>
+        <button type="submit"> Submit</button><br>
+        <hr>
+        <h1>Checkbox</h1>
+        <label type="Checkbox" name="age" id="age" checked>Age</label>
+        <input type="Checkbox" name="age" id="age" checked>
+        <hr>
+        <h1>Radio Button</h1>
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female">
+        <label for="female">Female</label>
+
+        <hr>
+        <h1>Dropbox</h1>
+        <select name="Languages you know">
+            <option value="">C</option>
+            <option value="">C++</option>
+            <option value="">Python</option>
+        </select>
+
+        <hr>
+        <h1>Range</h1>
+        <label for="Attendance">Attendance</label>
+        <input type="range" min="0" max="100" name="Attendance" step="10" value="80">
+        <hr>
+        <h1>TextArea</h1>
+        <label for="">Enter your feedback</label>
+        <textarea name="" id="" cols="30" rows="30"></textarea>
+
+    </form>
+
+
+</body>
+</html>

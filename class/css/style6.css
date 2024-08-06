@@ -1,0 +1,15 @@
+section{
+    width: 80vx;
+    margin: 20px auto;
+    display: grid;
+    /* grid-template-columns: 250px 250px 250px; */
+    /* grid-template-rows: 250px 250px 250px 250px; */
+    grid-auto-columns: repeat(5,250px);
+    /* row-gap: 20px;
+    column-gap: 20px; */
+    gap:20px 10px;
+}
+
+div{
+    height: 50 px;
+}

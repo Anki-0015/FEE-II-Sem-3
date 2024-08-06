@@ -1,0 +1,21 @@
+section{
+    border: 2px solid #ccc;
+    margin: 1px;
+    padding: 1rem;
+}
+
+h1{
+    font-size: 40px;
+    text-align: center;
+}
+ 
+@media screen and (max-width:520px){
+    section{
+        background-color: chocolate;
+        text-transform: uppercase;
+    }
+    h1{
+        color: blue;
+        text-transform: capitalize;
+    }
+}

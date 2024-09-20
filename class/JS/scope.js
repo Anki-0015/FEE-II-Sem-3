@@ -22,11 +22,52 @@
 
 // 2. Functional Scope: ->
 
-let c = 50;
+let sum = 50;                // global
+// let c = 50;
 function calsum(a,b){
 
-    let c = a + b;
+    let c = a + b;         // local     accessible only in brackets (curly)
     console.log(c);
+    console.log(sum);
 }
 
 calsum(5,2);
+// console.log(c);
+
+
+
+
+
+// global :
+
+//let and const , we can just access in piece of block not outside.
+
+{
+    var t = 10;
+    let p = 30;
+
+    const y = 40;
+}
+
+console.log(t)
+
+console.log(p)  // nah
+
+console.log(y)  // nah
+
+
+
+
+
+// lexical :
+
+function outerFun(){
+    let a = 10;
+
+    function innerfunc(){
+        let b = 20;
+        let c = a + b;
+
+        console.log(c);
+    }
+}

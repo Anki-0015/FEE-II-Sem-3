@@ -16,4 +16,18 @@ console.log(10 + "A");   // 10A
 
 console.log(10 - "A");   // NaN
 
-console.log(10 + '2' - "A");
+console.log(10 + '2' - "A");   //NaN
+
+console.log(10 - "2" + "A");   // 8A  
+
+
+console.log("\n");  // string to number
+
+
+let a = "20";
+// let c = Number (a);
+let d = parseInt (a);
+
+// console.log(typeof a);
+// console.log(typeof c);
+console.log(typeof d);

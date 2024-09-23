@@ -23,6 +23,7 @@ console.log(typeof name);
 
 //boolean
 
+
 let isTrue = true;
 console.log(isTrue);
 console.log(typeof isTrue);

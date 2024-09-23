@@ -52,6 +52,11 @@
 
 // Repeat:
 
-let text = "whole class is creating a mess \n";
+// let text = "whole class is creating a mess \n";
 
-console.log(text.repeat(3));
+// console.log(text.repeat(3));
+
+
+
+
+

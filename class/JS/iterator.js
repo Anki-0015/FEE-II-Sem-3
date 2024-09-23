@@ -12,10 +12,11 @@
 
 // for in:
 
-let obj = {name: "Ankit" }
+// let obj = {name: "Ankit" }
 
-for(let i in obj){
+// for(let i in obj){
     
-    console.log(obj[Symbol.iterator]);
-    console.log(obj[i]);
-}
+//     console.log(obj[Symbol.iterator]);
+//     console.log(obj[i]);
+// }
+

@@ -67,26 +67,24 @@
 
 
 // Create an array
-let myArray = [
-    {
-        object1: {
-            name: "Ankit",
-            age: 19,
-        },
-        object2: {
-            name: "Prateek",
-            age: 20,
-        },
-        object3: {
-            name: "Keshav",
-            age: 18,
-        }
-    }
-];
+// let myArray = [
 
-console.log(myArray[0].object1.name); 
-console.log(myArray[0].object2.age);
-console.log(myArray[0].object3.name);  
+//     {
+//         object1: {
+//             name: "Ankit",
+//             age: 19,
+//         },
+//         object2: {
+//             name: "Prateek",
+//             age: 20,
+//         },
+//         object3: {
+//             name: "Keshav",
+//             age: 18,
+//         }
+//     }
+// ];
 
-
-
+// console.log(myArray[0].object1.name); 
+// console.log(myArray[0].object2.age);
+// console.log(myArray[0].object3.name);  

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Color Changer</title>
+    <style>
+        #colorBox {
+            margin: 20px auto;
+            text-align: center;
+        }
+        #rgbInput {
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="rgbDisplay">Enter RGB value</div>
+
+    <div id="colorBox">
+        <input type="text" id="rgbInput" placeholder="e.g. 255, 0, 0">
+    </div>
+
+    <script>
+        const rgbInput = document.getElementById('rgbInput');
+        const rgbDisplay = document.getElementById('rgbDisplay');
+
+        rgbInput.addEventListener('input', function() {
+            let rgbValue = rgbInput.value.trim();
+            const rgbPattern = /^(\d{1,3}),\s*(\d{1,3}),\s*(\d{1,3})$/;
+            const match = rgbValue.match(rgbPattern);
+
+            if (match) {
+                const rgbColor = `rgb(${match[1]},${match[2]},${match[3]})`;
+                document.body.style.backgroundColor = rgbColor;
+                rgbInput.style.backgroundColor = rgbColor;
+                rgbDisplay.textContent = `RGB: ${match[1]}, ${match[2]}, ${match[3]}`;
+            } else {
+                rgbDisplay.textContent = 'Enter valid RGB value (e.g. 255, 0, 0)';
+                document.body.style.backgroundColor = '';
+                rgbInput.style.backgroundColor = '';
+            }
+        });
+    </script>
+
+</body>
+</html>

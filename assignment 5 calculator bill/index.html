@@ -4,37 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bill Calculator</title>
-    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Bill Calculator</h1>
-        <form id="billForm">
-            <label for="billAmount">Bill Amount</label>
-            <input type="number" id="billAmount" placeholder="Enter amount" required>
-
-            <label for="tipPercentage">Tip Percentage</label>
-            <select id="tipPercentage" required>
-                <option value="0">0%</option>
-                <option value="5">5%</option>
-                <option value="10">10%</option>
-                <option value="15">15%</option>
-                <option value="20">20%</option>
-                <option value="25">25%</option>
-            </select>
-
-            <label for="split">Number of People</label>
-            <input type="number" id="split" placeholder="Split between people" min="1" value="1" required>
-
-            <button type="button" id="calculateButton">Calculate</button>
-        </form>
-
-        <div id="result" class="hidden">
-            <h2>Total Per Person:</h2>
-            <p id="totalPerPerson">$0.00</p>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
